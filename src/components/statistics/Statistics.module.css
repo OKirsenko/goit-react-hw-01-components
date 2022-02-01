@@ -1,0 +1,30 @@
+.section {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgb(246, 250, 246);
+  box-shadow: 5px 5px 15px -5px rgba(0, 15, 26, 0.6);
+}
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.list {
+  padding: 10px;
+}
+.item {
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+  margin: 0;
+}
+.item:nth-child(even) {
+  background-color: lightsteelblue;
+}
+.item:nth-child(odd) {
+  background-color: lightcyan;
+}
+.label {
+  display: block;
+}

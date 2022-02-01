@@ -6,10 +6,11 @@ import friends from "./data/friends.json";
 import user from "./data/user.json";
 import data from "./data/data.json";
 import items from "./data/transactions.json";
+import Main from "./components/main/Main";
 
 export default function App() {
   return (
-    <main>
+    <Main>
       <Profile
         avatar={user.avatar}
         location={user.location}
@@ -20,6 +21,6 @@ export default function App() {
       <Statistics stats={data} title="Upload stats" />
       <FriendsList friends={friends} />
       <TransactionHistory items={items} />
-    </main>
+    </Main>
   );
 }

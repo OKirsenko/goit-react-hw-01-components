@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
+import s from "./Transaction.module.css";
 
 export default function Transaction({ type, amount, currency }) {
   return (
     <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <td className={s.data}>{type}</td>
+      <td className={s.data}>{amount}</td>
+      <td className={s.data}>{currency}</td>
     </tr>
   );
 }
